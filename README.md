@@ -1,7 +1,11 @@
 # Overview
 - The repository was created to document my R learning journey for me to use for future references
+
+# Courses that I have learnt R
+- Introduction to Data Science
+- Statistical Computing
    
-# Topics covered in Statistical Computing class
+# Statistical Computing 
 ## 1). Data Visualisation using ggplot2
 - Inbuilt datsets used:
   - mtcars
@@ -9,29 +13,32 @@
   - diamonds
 
 ### a)mtcars dataset
+<img width="425" height="169" alt="image" src="https://github.com/user-attachments/assets/e0ba6aa2-9c34-4558-8461-e5b7bb79ee06" />
+
+### i)Scatter plot
 <img width="509" height="260" alt="image" src="https://github.com/user-attachments/assets/f61b6ef8-a4b2-42af-bbe8-0157660c7d0a" />
 
 ### Interpretation
 - Negative relationship among the variables, draw a line it goes downwards
 - Increase in number of cylinders leads to decrease in miles per gallon
 - Cars with 4 cylinders have the highest fuel efficiency ranging from approximately 22mpg-34mpg.
-- Cars with 6 cylinders have moderate fuel efficiency ranging from approximately 18mpg-23mpg.
-- Cars with 8 cylinders have the lowest fuel efficiency ranging from approximately 11mpg-19mpg.
-  
-### Explanation of code used
+
+### Explanation of Scatter plot code 
 - ggplot(mtcars, aes(cyl, mpg)) - Creates a plot using the mtcars dataset, mapping cyl to the x-axis and mpg to the y-axis.
-- +- Adds another layer to the plot.
+- + Adds another layer to the plot.
 - geom_point() - Displays the data as points in a scatter plot
 - labs(title = "Distribution of Miles Per Gallon and Number of Cylinders in mtcars dataset") - Adds a title to the plot 
 
 ### Change the Scatter plot command by wrapping factor() around cyl
 <img width="509" height="259" alt="image" src="https://github.com/user-attachments/assets/c4ead58b-b877-4d7a-8ec7-207a7bd39e36" />
 
-### Differences with the first scatter plot
+### Difference with the first scatter plot
 - X axis is shown that it is categorised
-- Scale is smaller
 
 ### b) iris dataset
+<img width="483" height="107" alt="image" src="https://github.com/user-attachments/assets/7917df69-de03-4559-bf91-ac17b6d453cf" />
+
+### Scatter plot
 <img width="501" height="258" alt="image" src="https://github.com/user-attachments/assets/042fd27e-5575-43d2-92cd-e22ac5548752" />
 
 ### Interpretation
@@ -46,10 +53,71 @@
   
 ### Interpretation
 - Negative linear relationship among the variables.
-- Dots are in different colors.
+- Dots are in different colors representing different displacement values.
 - 3 variables mentioned:mpg, wt and disp.
-- Darker dots have high fuel efficiency.
-- Darker dots have a low engine displacement disp
+- Darker dots have high fuel efficiency, low engine displacement disp and weigh less.
+
+### Edit to add a size aesthetic mapped to disp variable
+<img width="557" height="258" alt="image" src="https://github.com/user-attachments/assets/60dd578d-fef3-4af0-b4f5-785266a7d645" />
+
+### Interpretation
+- Negative linear relationship among the variables.
+- Larger dots compared to the previous plot
+- Default color is black.
+- Displacement is in terms of size previous plot displacement is in terms of color
+
+#### NB: Shape() only works with categorical data
+
+### c)diamonds dataset
+<img width="501" height="163" alt="image" src="https://github.com/user-attachments/assets/5dd88bcc-0a28-4c63-8b57-4e048fe1d172" />
+
+### Scatter plots
+<img width="550" height="260" alt="image" src="https://github.com/user-attachments/assets/2a57136e-90d0-4442-ae97-df27547b57c0" />
+
+### Interpretation
+- Strong positive relationship between carat and price.
+- Spread of points widens as carat increases, indicating greater variability in price among larger diamonds.
+
+### Add geom smooth using method = 'gam' and formula = 'y ~ s(x, bs = "cs")
+<img width="446" height="263" alt="image" src="https://github.com/user-attachments/assets/05865434-e520-4a4e-9e8f-0f546b6978c7" />
+
+### Interpretation
+- The blue smooth curve summarizes the average relationship between carat and price.
+- It reveals that the relationship is non-linear
+- The gray band shows uncertainty around the estimated trend.
+  
+### Differences with the previous one
+- The first plot suggests a positive relationship, but the second plot makes it clear that the relationship is strong, positive, and non-linear.
+- The trend line highlights how price accelerates with carat size and shows that the effect is not constant across all diamond sizes.
+
+<img width="449" height="256" alt="image" src="https://github.com/user-attachments/assets/18e7c3af-483e-4253-802f-3e1aeba829bf" />
+
+### Interpretation
+- Positive non linear relationship among variables.
+- Several colors representing different clarity values
+
+### Make the points 40% opaque
+<img width="443" height="257" alt="image" src="https://github.com/user-attachments/assets/9fd18828-e596-4a0f-8b85-d791b890bace" />
+
+### Differences
+- geom_point() - Image 1
+- geom_point(alpha=0.4) - Image 2
+- Dots in Image 2 are lighter compared to Image 1
+
+### ii) Histogram
+<img width="443" height="257" alt="image" src="https://github.com/user-attachments/assets/65f07f38-7948-4ddc-b11a-29840f5f90e4" />
+
+### Interpretation
+- Wide spread of data
+- Positive/rightly skewed - there are  few cars with high miles per gallon values.
+- The peak is in the range~(13-22.50) showing high concentration.
+
+## Summary
+- Scatter plot - geom-point()
+- Box plot -  geom_boxplot()
+- Line graph - geom_line()
+- Bar chart - geom_bar()
+- Histogram - geom_histogram()
   
 ## 2). Machine learning(ML)
 - Definition of Machine Learning
