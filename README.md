@@ -124,7 +124,13 @@
   - Machine Learning is a branch of data science that learns data patterns to make predictions
     
 - Differences between Machine Learning and Classical Statistics
-      ##table##
+   | Machine Learning| Classical Statistics|
+   |-----------------|---------------------|
+   |1.Mainly used to make predictions|Mainly used to explain relationships and hypotheses|
+  |2.Model focusses on accuracy|Model focusses on interpretability|
+  |3.Uses large datasets|Uses small datasets|
+  |4.Emphasizes on Train test split|Emphasizes on  Confidence intervals|Assumption checks|
+  
 - Main parts of Machine Learning
   - Decision process
   - Error function
