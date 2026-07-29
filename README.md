@@ -1,7 +1,7 @@
 # Overview
-- The repository was created to document my R learning journey for me to use for future references
+- The repository was created to document my R learning journey in my University courses
 
-# Courses that I have learnt R
+# Courses I have learnt R in
 - Introduction to Data Science
 - Statistical Computing
    
@@ -25,7 +25,7 @@
 
 ### Explanation of Scatter plot code 
 - ggplot(mtcars, aes(cyl, mpg)) - Creates a plot using the mtcars dataset, mapping cyl to the x-axis and mpg to the y-axis.
-- + Adds another layer to the plot.
+- Plus sign adds another layer to the plot.
 - geom_point() - Displays the data as points in a scatter plot
 - labs(title = "Distribution of Miles Per Gallon and Number of Cylinders in mtcars dataset") - Adds a title to the plot 
 
