@@ -1,0 +1,229 @@
+---
+title: "EDA on mtcars dataset"
+author: "Natasha Gicheha"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+#Load dataset
+data(mtcars) #Inbuilt
+
+#Part A: Understanding the Dataset
+#1a) Display the first six observations.
+head(mtcars)
+
+#b) Display the last six observations.
+tail(mtcars)
+
+#c) Determine the number of observations and variables.
+# Order is (number of rows, number of columns)
+dim(mtcars) #32 rows, 11 columns
+
+#d) Names of all variables
+names(mtcars) #Each name is put in quotes
+
+#e) Display the structure of the dataset
+#Output:Data type of the dataset
+#Data type of each column
+#Total number of observations and total variables
+#Some observations in each variable
+str(mtcars)
+
+#2a) The data type of each variable.
+str(mtcars) #all are numerical, data types are written in short form
+
+#b) Which variables should be treated as categorical rather than numerical?
+#cyl, gear, vs, am and carb (5)
+#Although they are stored as numbers, the values represent groups or categories rather than measurements on a continuous scale.
+
+#c) Convert the appropriate variables into factors.
+mtcars$cyl  <- factor(mtcars$cyl)
+mtcars$vs   <- factor(mtcars$vs)
+mtcars$am   <- factor(mtcars$am)
+mtcars$gear <- factor(mtcars$gear)
+mtcars$carb <- factor(mtcars$carb)
+
+# Verify the changes
+str(mtcars)
+    
+
+#Question 3 Perform a quality assessment of the dataset.
+#a) Check for missing values.
+colSums(is.na(mtcars))#No missing values
+
+#b) Check for duplicated observations.
+sum(duplicated(mtcars)) #No duplicates
+
+#c) Determine the number of unique values in each variable.
+#unique values=different values that appear in a variable
+#not the same as outliers
+#function(x) "For every column in mtcars, count the number of unique values.
+sapply(mtcars, function(x) length(unique(x)))#No of unique values
+
+#d) Produce a summary of all variables.
+#Numerical
+#Factor datatype frequency of each category.
+#cyl variable:
+#14 cars (43.75%) have 8 cylinders.
+#11 cars (34.38%) have 4 cylinders.
+#7 cars (21.88%) have 6 cylinders.
+summary(mtcars)
+
+#Part C: Univariate Analysis
+#Question 4 Conduct a univariate analysis for the variable Miles per Gallon (mpg).
+#a) Compute the mean, median, mode, variance, and standard deviation.
+summary(mtcars$mpg) #mean, median
+
+# Mode
+mode_func <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+
+mode_func(mtcars$mpg)
+
+# Variance
+var(mtcars$mpg)
+
+# Standard Deviation
+sd(mtcars$mpg)
+
+#b) Calculate the minimum, maximum, range, and interquartile range.
+summary(mtcars$mpg) #minimum, maximum
+
+# Range
+# overall spread.
+range(mtcars$mpg)
+
+# Interquartile Range
+#spread of the middle 50% of observations
+IQR(mtcars$mpg)
+
+#c) Interpret the results.
+#1.Mean
+#Average fuel efficiency of all vehicles.
+
+#2Median
+#Middle mpg value when arranged in order.
+#Mode
+#Most frequently occurring mpg value.
+#Variance
+#Measures variability around the mean.
+#Standard Deviation
+#Average spread of mpg values around the mean.
+#Large SD = more variation among vehicles.
+#•	Minimum = lowest fuel efficiency.
+#•	Maximum = highest fuel efficiency.
+#•	Range = overall spread.
+#•	IQR = spread of the middle 50% of observations.
+
+#Question 5 Create suitable visualizations for the variable mpg
+#a) Histogram
+library(ggplot2)
+hist(mtcars$mpg,
+     main = "Histogram of MPG",
+     xlab = "Miles per Gallon",
+     col = "skyblue",
+     border = "black")
+
+#Interpretation
+#Right skewed
+#Look for:Symmetry, Skewness andPeaks (modes)
+#If the bars are concentrated on one side with a long tail, the distribution is skewed.
+
+#b) Boxplot
+boxplot(mtcars$mpg,
+        main = "Boxplot of MPG",
+        ylab = "Miles per Gallon",
+        col = "lightgreen")
+
+#Interpretation
+#The boxplot shows:
+# •	Median (center line) 20
+#•	Q1 15 and Q3 ~ 24 (box)
+#•	Minimum and maximum values
+#•	Outliers (points outside whiskers)
+#Potential outliers appear as dots beyond whiskers.
+
+#Question 6 Using all numerical variables,
+#numerical variables: 
+colnames(mtcars)
+#drat, am, wt, disp, qsec, hp, vs
+
+#a) Produce histograms - numeric data types only.
+str(mtcars)
+# drat variable
+hist(mtcars$drat,
+     main = "Histogram of DRAT",
+     xlab = "DRAT",
+     col = "skyblue",
+     border = "black")
+
+
+# wt variable
+hist(mtcars$wt,
+     main = "Histogram of WT",
+     xlab = "Weight",
+     col = "skyblue",
+     border = "black")
+
+# disp variable
+hist(mtcars$disp,
+     main = "Histogram of DISP",
+     xlab = "Displacement",
+     col = "skyblue",
+     border = "black")
+
+# qsec variable
+hist(mtcars$qsec,
+     main = "Histogram of QSEC",
+     xlab = "1/4 Mile Time",
+     col = "skyblue",
+     border = "black")
+
+# hp variable
+hist(mtcars$hp,
+     main = "Histogram of HP",
+     xlab = "Horsepower",
+     col = "skyblue",
+     border = "black")
+
+
+
+#Next class presentation!
+#4 histograms in one Cartesian plane
+
+#b) Produce boxplots.
+# drat variable
+boxplot(mtcars$drat,
+        main = "Boxplot of DRAT",
+        col = "lightgreen")
+
+# wt variable
+boxplot(mtcars$wt,
+        main = "Boxplot of WT",
+        col = "lightgreen")
+
+# disp variable
+boxplot(mtcars$disp,
+        main = "Boxplot of DISP",
+        col = "lightgreen")
+
+# qsec variable
+boxplot(mtcars$qsec,
+        main = "Boxplot of QSEC",
+        col = "lightgreen")
+
+# hp variable
+boxplot(mtcars$hp,
+        main = "Boxplot of HP",
+        col = "lightgreen")
+
+#c) Identify variables with skewed distributions.
+#d) Identify variables containing potential outliers.
+
+#9, 10not f
+
+```
+
