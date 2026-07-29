@@ -1,0 +1,27 @@
+{
+    "id": "0BDBF10F",
+    "path": "~/Statistical Computing/EDA on mtcars dataset.Rmd",
+    "project_path": "EDA on mtcars dataset.Rmd",
+    "type": "r_markdown",
+    "hash": "1191713795",
+    "contents": "",
+    "dirty": false,
+    "created": 1783587412780.0,
+    "source_on_save": true,
+    "relative_order": 6,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "221,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1783588827,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1783588827994,
+    "read_only": false,
+    "read_only_alternatives": []
+}
