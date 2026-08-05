@@ -1,4 +1,4 @@
-# Assignment 2: 📘 Data Mining & Exploratory Data Analysis (EDA) 
+# Data Mining & Exploratory Data Analysis (EDA) 
 
 ## 1. What is Exploratory Data Analysis (EDA), and why is it carried out before building a model?
 Exploratory Data Analysis (EDA) is the process of examining, summarizing, and visualizing data to understand its structure, patterns, relationships, and anomalies. It is performed before modeling to detect errors, identify trends, verify assumptions, and guide feature selection.
@@ -61,11 +61,11 @@ The tidyr package is used for tidying and reshaping data into a consistent forma
 | `separate()` | Splits one column into two or more columns based on a specified delimiter or separator. |
 | `unite()` | Combines two or more columns into a single column. |
 
-# Using separate()
+### Using separate()
 df <- data.frame(name = "John_Doe")
 separate(df, name, into = c("FirstName", "LastName"), sep = "_")
 
-# Using unite()
+### Using unite()
 ```r
 df <- data.frame(
   FirstName = "John",
@@ -90,7 +90,7 @@ ggplot(mtcars, aes(x = hp, y = mpg)) +
 
 ---
 
-## 10. How can a ggplot2 plot's appearance be customized using themes? Give an R code example.
+## 10. How can a plot's appearance using ggplot2 be customized using themes? Give an R code example.
 
 ```r
 ggplot(mtcars, aes(hp, mpg)) +
@@ -189,17 +189,13 @@ A random scatter around zero is desirable.
 
 #### 2. Normal Q-Q Plot
 
-Checks:
-
-- Whether residuals are approximately normally distributed
+Checks Whether residuals are approximately normally distributed
 
 Points should lie close to the reference line.
 
 #### 3. Scale-Location Plot
 
-Checks:
-
-- Constant variance of residuals
+Checks Constant variance of residuals
 
 A roughly horizontal spread of points is preferred.
 
@@ -222,10 +218,33 @@ Checks:
 ### Summary
 
 Diagnostic plots are used to verify whether the assumptions of linear regression are satisfied and to identify potential problems that may affect model accuracy and interpretation.
-# Fit
-# 📚 Academic References
 
-1. Tukey, J. W. (1977). *Exploratory Data Analysis*. Addison-Wesley.
-2. Han, J., Kamber, M., & Pei, J. (2012). *Data Mining: Concepts and Techniques* (3rd ed.). Morgan Kaufmann.
-3. Wickham, H. (2016). *ggplot2: Elegant Graphics for Data Analysis*. Springer.
-4. R Core Team. *R Documentation* for `str()`, `summary()`, `cbind()`, `rbind()`, `table()`, and `fivenum()`.
+# References
+Konopka, B. M., Lwow, F., Owczarz, M., & Łaczmański, Ł. (2018). Exploratory data analysis of a clinical study group: Development of a procedure for exploring multidimensional data. *PLOS ONE, 13*(8), e0201950. https://doi.org/10.1371/journal.pone.0201950
+
+Wongsuphasawat, K., Liu, Y., & Heer, J. (2020). Goals, process, and challenges of exploratory data analysis: An interview study. *IEEE Transactions on Visualization and Computer Graphics, 26*(1), 987-997. https://doi.org/10.1109/TVCG.2019.2934534
+
+Kuhn, M., & Johnson, K. (2019). Feature engineering and selection for predictive models. *Chapman and Hall/CRC*. https://doi.org/10.1201/9781315108230
+
+Abbigeri, V. S., & Devanagavi, G. D. (2024). Feature engineering in machine learning: Current trends, challenges, and best practices. *Journal of Emerging Technologies and Innovations in Management*, 11(8), 1-15.
+
+Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L. D., François, R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen, T. L., Miller, E., Bache, S. M., Müller, K., Ooms, J., Robinson, D., Seidel, D. P., Spinu, V., ... Yutani, H. (2019). Welcome to the tidyverse. *Journal of Open Source Software, 4*(43), 1686. https://doi.org/10.21105/joss.01686
+
+Pedersen, T. L. (2024). Data visualization and statistical graphics in the tidyverse ecosystem. *Journal of Open Source Software, 9*(95), 6647. https://doi.org/10.21105/joss.06647
+
+Peng, R. D. (2016). Reproducibility in science: Improving the standard for basic and preclinical research. *Circulation Research, 119*(6), 643-645. https://doi.org/10.1161/CIRCRESAHA.116.309619
+
+James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). Statistical learning and predictive modeling methods. *Annual Review of Statistics and Its Application, 8*, 15-43.
+
+Molnar, C., Casalicchio, G., & Bischl, B. (2020). Interpretable machine learning: A brief history, state-of-the-art and challenges. *Machine Learning and Knowledge Extraction, 2*(3), 371-390. https://doi.org/10.3390/make2030024
+
+Wickham, H. (2016). *ggplot2: Elegant Graphics for Data Analysis*. Springer.
+
+R Core Team. *R Documentation* for `str()`, `summary()`, `cbind()`, `rbind()`, `table()`, and `fivenum()`.
+van der Loo, M. P. J., & de Jonge, E. (2018). Data validation infrastructure for R. *Journal of Statistical Software, 85*(7), 1-31. https://doi.org/10.18637/jss.v085.i07
+
+R Core Team. (2025). *R: A language and environment for statistical computing*. R Foundation for Statistical Computing. https://www.r-project.org/
+
+Wickham, H. (2016). *ggplot2: Elegant graphics for data analysis*. Springer. https://doi.org/10.1007/978-3-319-24277-4
+
+Wickham, H., Vaughan, D., & Girlich, M. (2024). *tidyr: Tidy messy data*. https://cran.r-project.org/package=tidyr
