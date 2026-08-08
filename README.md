@@ -33,7 +33,7 @@
 <img width="509" height="259" alt="image" src="https://github.com/user-attachments/assets/c4ead58b-b877-4d7a-8ec7-207a7bd39e36" />
 
 ### Difference with the first scatter plot
-- X axis is shown that it is categorised
+- X axis is categorised
 
 ### b) iris dataset
 <img width="483" height="107" alt="image" src="https://github.com/user-attachments/assets/7917df69-de03-4559-bf91-ac17b6d453cf" />
@@ -112,7 +112,7 @@
 - Positive/rightly skewed - there are  few cars with high miles per gallon values.
 - The peak is in the range~(13-22.50) showing high concentration.
 
-## Summary
+## Summary of Data Visualisations
 - Scatter plot - geom-point()
 - Box plot -  geom_boxplot()
 - Line graph - geom_line()
@@ -135,21 +135,23 @@
   - Decision process
   - Error function
   - Model Optimization Process
-  - 
+    
 - Categories of Machine Learning
     - Supervised - learns from labelled data(classification - categorical output, regression-continuous numerical output)
     - Unsupervised - without any labels and patterns(Clustering, Association Rule Learning and Dimensionality Reduction)
       
-- How Classification Works
-      Data Collection
-      Data Cleaning
-      Feature Engineering
-      Model building
-      Model deployment and evaluation
+- How Classification Works:
+  - Data Collection.
+  - Data Cleaning.
+  - Exploratory Data Analysis
+  - Feature Engineering.
+  - Model building.
+  - Model deployment.
+  - Model evaluation
   
 - Packages Used - using R version 4.5.3
   - library(caret) - Provides tools for data splitting, model training, tuning, and evaluation.
-  - library(class - Implements classification algorithms such as k-Nearest Neighbours (k-NN).
+  - library(class) - Implements classification algorithms such as k-Nearest Neighbours (k-NN).
   - library(rpart) - Builds decision tree models for classification and regression tasks.
   - library(rpart.plot) - Creates enhanced visualizations of decision tree models.
   - library(cluster) - Provides methods for cluster analysis and clustering validation.
