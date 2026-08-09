@@ -1,12 +1,11 @@
 # End Semester Revision
-## 📊1.MCQS on Statistical Computing & Machine Learning 
-One question at a time. One step at a time. - English
-Yí ge tí yí ge tí lái. Yí bù yí bù lái -Chinese(Pinyin)
-一个题一个题来。一步一步来 - Chinese(Hanzi)
+>  🎓One question at a time = One step at a time.🎓 -English.
+
+>  Yí ge tí yí ge tí lái = Yí bù yí bù lái -Chinese(Pinyin).
+
+>  一个题一个题来。一步一步来 - Chinese(Hanzi)
 ---
-
-# Multiple Choice Questions
-
+## 📊1).MCQS on Statistical Computing & Machine Learning 
 ### Q1. Which statement best defines Machine Learning?
 A. A method for storing data in databases
 
@@ -153,18 +152,19 @@ C. Data collection → Data cleaning → EDA → Feature engineering → Model b
 
 D. Data collection → Deployment → Model building → EDA
 
+--------------------------------------------------------------
 
 
 > 🌟Success is the sum of small efforts repeated day in and day out.🌟
 
 > **Chénggōng shì rìfù yírì de xiǎo nǔlì de zǒnghé.**
 
-## 2.Quiz 2 Overview
-💪I do not need to be perfect. I only need to keep going.💪 - English
+## 2).Quiz 2 Overview
+> 💪I do not need to be perfect. I only need to keep going.💪 - English.
 
-Wǒ bú yòng wánměi. Wǒ zhǐ yào jìxù. - Pinyin
+>   Wǒ bú yòng wánměi. Wǒ zhǐ yào jìxù. - Pinyin.
 
-我不用完美。我只要继续。- Hanzi
+>   我不用完美。我只要继续。- Hanzi
 
 ### Question 1
 
@@ -240,7 +240,8 @@ In **dplyr**, the function used to create or modify a column in a data frame is 
 ## Question 10
 
 ```r
-if (_____){
+x<-15
+if (x>10){
   print("Pass")
 } else {
   print("Fail")
