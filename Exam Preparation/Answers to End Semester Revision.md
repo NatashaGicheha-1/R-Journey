@@ -1,4 +1,4 @@
-# 📘 Answers to End Semester Revision (Expanded Study Guide)
+# 📘 Answers to End Semester Revision file
 
 # 🌟 How to Use This Guide
 
@@ -19,11 +19,11 @@ For every question:
 Machine Learning allows computers to learn from examples instead of being explicitly programmed for every task.
 
 🎯 Exam Tip:
-Look for keywords:
-  Prediction.
-  Learning from data
-  Pattern recognition.
-  Training Data
+* Look for keywords:
+  * Prediction.
+  * Learning from data.
+  * Pattern recognition.
+  * Training Data
 
 🔑 Memory Trick:
 🤖 Machine Learning = Learn ➜ Predict
@@ -38,14 +38,14 @@ Look for keywords:
 |C. Classification | Categorical output|
 |D. Clustering | Labelled output|
 
-✅ Answer: |C. Classification | Categorical output|
+✅ Answer: C. Classification - Categorical output
 
 🧠 Explanation:
 Classification predicts categories such as Pass/Fail, Yes/No, Spam/Not Spam.
 
-🎯 Exam Tip:
-Regression = numbers.
-Classification = categories.
+* 🎯Exam Tip:
+  * Regression = numbers.
+  * Classification = categories.
 
 ---
 
@@ -55,9 +55,9 @@ Classification = categories.
 🧠 Explanation:
 Classical statistics aims to explain relationships and test hypotheses.
 
-🎯 Exam Tip:
-Statistics asks WHY.
-Machine Learning asks WHAT WILL HAPPEN.
+* 🎯 Exam Tip:
+  * Statistics asks WHY.
+  * Machine Learning asks WHAT WILL HAPPEN.
 
 ---
 
@@ -67,8 +67,7 @@ Machine Learning asks WHAT WILL HAPPEN.
 🧠 Explanation:
 geom_point() draws individual points showing a relationship between two variables.
 
-🎯 Exam Tip:
-point = scatter plot
+🎯 Exam Tip: point = scatter plot
 
 ---
 
@@ -88,7 +87,7 @@ Used to visualize distributions of numerical data.
 
 ---
 
-## Q7. ML Training Package
+## Q7. Machine Learning Training Package?
 ✅ Answer: caret
 
 🧠 Explanation:
@@ -107,33 +106,33 @@ caret supports splitting data, training models, tuning and evaluation.
 |factoextra| Offers functions for visualizing clustering and multivariate analysis results.|
 
 
-🔑 Memory Trick:
-tidyr → TIDY → Clean and reshape data
-dplyr → DATA → Manipulate data
-palmerpenguins → PENGUINS → Sample dataset
-caret → CARE → Train, tune, evaluate models
-class → CLASSIFY → k-NN classification
-rpart → PARTITION → Decision tree splits
-rpart.plot → PLOT → Visualize decision trees
-cluster → CLUSTER → Group similar observations
-factoextra → EXTRA VISUALS → Visualize clustering results
+* 🔑 Memory Trick:
+  * tidyr → TIDY → Clean and reshape data.
+  * dplyr → DATA → Manipulate data.
+  * palmerpenguins → PENGUINS → Sample dataset.
+  * caret → CARE → Train, tune, evaluate models.
+  * class → CLASSIFY → k-NN classification.
+  * rpart → PARTITION → Decision tree splits.
+  * rpart.plot → PLOT → Visualize decision trees.
+  * cluster → CLUSTER → Group similar observations.
+  * factoextra → EXTRA VISUALS → Visualize clustering results.
 
 ---
 
-## Q8. Example of Unsupervised Learning
+## Q8. Example of Unsupervised Learning?
 ✅ Answer: Clustering
 
 🧠 Explanation:
 No labels are provided. The algorithm discovers groups naturally.
 
-👥 Examples:
-- Customer Segmentation
-- Document Grouping
-- Market Basket Analysis
+* 👥 Examples:
+  - Customer Segmentation
+  - Document Grouping
+  - Market Basket Analysis
 
-Types of Machine Learning
-  1.Supervised
-  2.Unsupervised
+* Types of Machine Learning:
+  * 1.Supervised Learning
+  * 2.Unsupervised Learning
 
 ### Supervised Learning
 
@@ -144,6 +143,8 @@ Types of Machine Learning
 | Decision Trees | Make predictions using tree rules | Loan Approval Prediction |
 | Random Forest | Improve prediction using many trees | Customer Churn Prediction |
 | k-Nearest Neighbors (k-NN) | Classify based on similar observations | Iris Flower Classification |
+
+------------------
 
 ### Unsupervised Learning
 
@@ -213,11 +214,11 @@ The algorithm learns from input-output pairs.
 Displays median, quartiles and potential outliers.
 
 ### Memory Trick
-Scatter plot - geom-point()
-Box plot - geom_boxplot()
-Line graph - geom_line()
-Bar chart - geom_bar()
-Histogram - geom_histogram()
+* Scatter plot - geom-point()
+* Box plot - geom_boxplot()
+* Line graph - geom_line()
+* Bar chart - geom_bar()
+* Histogram - geom_histogram()
 
 ---
 
@@ -230,7 +231,6 @@ Often displays a regression line.
 ---
 
 ## Q15. Typical Classification Workflow
-✅ Answer:
 Data Collection ➜ Data Cleaning ➜ Expolatory Data Analysis ➜ Feature Engineering ➜ Model Building ➜ Evaluation ➜ Deployment
 
 | Step | Definition | Main Goal | Example |
@@ -269,11 +269,11 @@ Numerical Data Shows:
   
 Example: Marks, Age, Salary, Height
 
-Categorical Data Shows:
-  Frequency (Count).
-  Relative Frequency (%).
-  Proportion.
-  Mode (Most Common Category)
+* Categorical Data Shows:
+  * Frequency (Count).
+  * Relative Frequency (%).
+  * Proportion.
+  * Mode (Most Common Category)
   
 Example: Gender, Department, County, Pass/Fail
 
