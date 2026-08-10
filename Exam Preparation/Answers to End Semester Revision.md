@@ -259,7 +259,6 @@ Difference in Content of Summary Statistics in Numerical data and Categorical da
 Numerical Data Shows:
   Mean
   Median
-  Mode
   Minimum
   Maximum
   Range
@@ -380,15 +379,17 @@ Confusing mutate() with filter().
 ---
 
 ## Q10
-✅ Answer: Pass
 
 ```r
 x <- 15
 if(x > 10){
  print("Pass")
+} else {
+  print("Fail")
 }
 ```
-
+The output is?
+✅ Answer: "Pass"
 15 > 10 = TRUE
 
 Output = Pass
